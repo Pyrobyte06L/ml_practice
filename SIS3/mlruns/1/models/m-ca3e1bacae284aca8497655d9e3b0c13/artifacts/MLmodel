@@ -1,0 +1,36 @@
+artifact_path: /home/pyrobyte/Desktop/3rdYear/MachineLearning/practice/SIS3/mlruns/1/models/m-ca3e1bacae284aca8497655d9e3b0c13/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.11.18
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - sklearn.tree._tree.Tree
+    - sklearn.neighbors._kd_tree.KDTree
+    - sklearn.metrics._dist_metrics.EuclideanDistance64
+is_signature_from_type_hint: false
+mlflow_version: 3.18.0
+model_id: m-ca3e1bacae284aca8497655d9e3b0c13
+model_size_bytes: 3632915
+model_uuid: m-ca3e1bacae284aca8497655d9e3b0c13
+prompts: null
+run_id: ca456c8ccd964917a72cdce3e2b9d813
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 4]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-11-26 07:40:55.468155'
